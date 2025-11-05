@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
 <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#008000">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Concelho — mapa</title>
@@ -107,12 +108,11 @@ html, body {
 <p>escolhe “Adicionar ao ecrã principal”</p>
 
 <script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('data:text/javascript,self.addEventListener("install",()=>console.log("SW ok")));')
-  .then(() => console.log("Service Worker registado"))
-  .catch(err => console.log("Erro:", err));
-}
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
 </script>
+	
 	<script>
   // Espera 2 segundos antes de ir para o blog
   setTimeout(function() {
@@ -120,8 +120,8 @@ if ('serviceWorker' in navigator) {
   }, 3000);
 </script>
 </body>
-
 </html>
+
 
 
 
