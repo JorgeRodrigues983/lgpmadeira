@@ -1,7 +1,7 @@
 {
   "name": "Mapa da Madeira",
   "short_name": "Madeira",
-  "start_url": "/",
+  "start_url": "https://lgpmadeira.blogspot.com/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
